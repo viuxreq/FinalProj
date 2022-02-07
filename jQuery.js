@@ -24,7 +24,7 @@ $(window).ready( ()=>{
 
   $(".redesSociales").append(`
        <div>
-       <a href="https://instagram.com/"><img src="img/botonInstagram.gif"width="50%" alt="" ></a>
+       <a href="https://instagram.com/"><img src="img/botonInstagram.gif" width="50%" alt="" ></a>
       </div>
       <div >
         <a href="https://facebook.com/"><img src="img/botonFace.gif" width="50%" alt="" ></a>
