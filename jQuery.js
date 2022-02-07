@@ -23,14 +23,14 @@ $(window).ready( ()=>{
   //creando las imagenes de redes sociales
 
   $(".redesSociales").append(`
-       <div >
-        <img src="img/botoninstagram.gif" width="40%"  alt=""></img>
+       <div>
+       <a href="https://instagram.com/"><img src="img/botonInstagram.gif"width="50%" alt="" ></a>
       </div>
       <div >
-        <img src="img/botonFace.gif" width="40%"  alt=""></img>
+        <a href="https://facebook.com/"><img src="img/botonFace.gif" width="50%" alt="" ></a>
       </div>
       <div >
-        <img src="img/botonWhat.gif" width="40%"  alt=""></img>
+      <a href="https://whatsapp.com/"><img src="img/botonWhat.gif" width="50%" alt="" ></a>
       </div>`);
       $(".redesSociales").css({ 'display':'flex'});
 

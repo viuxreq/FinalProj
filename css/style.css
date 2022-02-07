@@ -55,11 +55,11 @@ h3{
 
 /*CARRITO*/
 .imagen__carrito{
-    width: 80%;
+    width: 50%;
     margin: 4rem ;
 }
 .imagen__Compra {
-    width: 200%;
+    width: 100%;
     margin: 2rem ;
 }
 .subMenu img:hover{
@@ -79,7 +79,7 @@ h3{
     margin: auto auto;
 }
 .tabla__botones img{
-    width: 3rem;
+    width: 2rem;
 }
 .subMenu ul {
     list-style: none;
