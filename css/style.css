@@ -1,0 +1,498 @@
+ /*Paleta de colores*/
+        
+ :root {
+    --ColorPrimarioNegro: black;
+    --colorSecundarioRojo: red;
+    --colorVerde: green;
+    --colorBlanco: white;
+}
+/*Globales*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Varela Round', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 1rem 1rem 5rem ;
+}
+
+h3{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+/*SUPERIOR*/
+
+.superior{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*CARRITO*/
+.imagen__carrito{
+    width: 80%;
+    margin: 4rem ;
+}
+.imagen__Compra {
+    width: 200%;
+    margin: 2rem ;
+}
+.subMenu img:hover{
+    cursor: pointer;
+}
+.tabla__articulo{
+    cursor: pointer;
+    width: 90%;
+    margin: auto auto;
+}
+.tabla__articulo img{
+    width: 10rem;
+}
+.tabla__botones{
+    cursor: pointer;
+    width: 100%;
+    margin: auto auto;
+}
+.tabla__botones img{
+    width: 3rem;
+}
+.subMenu ul {
+    list-style: none;
+    font-size:0 /* truco por el uso de inline-block*/
+ }
+ .subMenu li {
+    display: inline-block;
+    width: 25%;
+    position:relative;
+    font-size: 5rem;
+    font-weight: bold;
+    
+ }
+ .subMenu ul ul {
+    position: absolute;
+    display: none;
+ }
+ .subMenu  ul li {
+    display: block;
+ }
+ .subMenu li:hover ul {
+    display:block;
+ }
+ /*TABLA DEL CARRITO*/
+
+ .subMenu th{
+     font-size: 2rem;
+     padding: 0rem 2rem ;
+     font-weight: normal;
+     font-size: 2rem; 
+     text-align: center; 
+     padding: 2rem 4rem;
+ }
+ .subMenu td{
+     font-size: 2rem;
+     padding: 1rem 2rem;
+     font-weight: 700;
+ }
+ .tabla__botones{
+     margin: auto auto;
+ }
+ /* CONTADOR CARRITO */
+ .subMenu__contador p{
+     background-color: var(--ColorPrimarioNegro);
+     border-radius: 2rem;
+    font-size: 3rem;
+    width: 55%;
+     color: var(--colorBlanco);
+     text-align: center;
+     position: absolute;
+     left: 75%;
+     top: 15%;
+ }
+ 
+ #carrito{
+    background-color: var(--colorBlanco);
+    width: 400%;
+    border: 1px solid var(--ColorPrimarioNegro);
+    margin: 0rem 1rem;
+ }
+ .contadorCarritoCompras{
+     display: flex;
+     justify-content: space-evenly;
+     margin: 2rem;
+ }
+ .continuarCompra {
+    left: 38.5%;
+    bottom: 2rem;
+    position: relative;
+     text-decoration: none;
+     color: var(--colorBlanco);
+     font-size: 1.7rem;
+     padding: 1.5rem;
+     background-color: var(--colorVerde);
+     border-radius: 1rem;
+     
+ }
+ 
+
+ /* CONTADOR DE PRODUCTOS Y PRECIO */
+ .totalProductos, .totalCompra1 {
+    font-size: 2.5rem;
+   text-align: center;
+   padding: 2rem;
+}
+
+ /* BANNER PRINCIPAL */
+.navegacion__logoprincipal{
+    margin: 0 auto;
+    width: 100%;
+}
+.navegacion__logoprincipal img{
+    display: block;
+    width: 100%;
+}
+
+
+/* MENU */
+.navegacion {
+    margin: 4rem auto;
+}
+.navegacion ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.navegacion  li{
+    display: inline; 
+    font-size: 2rem; 
+    margin: 2rem;
+    cursor: pointer;
+}
+.navegacion a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--ColorPrimarioNegro);
+}
+
+
+/* PRODUCTOS */
+
+.productos{
+  width: 90%;  
+  margin: 0 auto;
+}
+.resultado{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem auto;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.card{
+    margin: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--colorBlanco);
+    transition: transform 0.5s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+.botonComprar p{
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--ColorPrimarioNegro);
+    color: var(--colorBlanco);
+    margin: 2rem auto;
+    
+    
+}
+.botonComprar p:hover{
+    background-color: var(--colorSecundarioRojo);
+    cursor: pointer;
+}
+
+.ofertas{
+    margin: 4rem auto;
+}
+.productosDestacados{
+    display: flex;
+    justify-content: center;
+}
+.productos__producto{
+    width: 20%;
+    height: 50rem;
+    margin: 3rem;
+    transition: transform 0.5s;
+}
+.productos__producto:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.productos__producto img{
+    display: none;
+    width: 70%;
+    display: block;
+    margin: auto auto;
+}
+
+
+/* PRODUCTOS DESTACADOS */
+.imagenZapatilla1, .imagenZapatilla2, .imagenZapatilla3, .imagenCampera1, .imagenCampera2, .imagenCampera3{
+    background-image: url(../img/campera10.png);
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s;
+}
+/* ZAPATILLAS*/
+.imagenZapatilla1{
+    background-image: url(../img/zapatilla1.png);
+    
+}
+.imagenZapatilla1:hover{
+    background-image: url(../img/zapatilla1-2.png);
+   
+
+}
+.imagenZapatilla2{
+    background-image: url(../img/zapatilla2.png);
+}
+.imagenZapatilla2:hover{
+    background-image: url(../img/zapatilla2-2.png);
+}
+.imagenZapatilla3{
+    background-image: url(../img/zapatilla3.png);
+}
+.imagenZapatilla3:hover{
+    background-image: url(../img/zapatilla3-3.png);
+}
+/* CAMPERAS */
+.imagenCampera1:hover{
+    background-image: url(../img/campera10-2.png);
+}
+.imagenCampera2{
+    background-image: url(../img/campera12.png);
+}
+.imagenCampera2:hover{
+    background-image: url(../img/campera12-2.png);
+}
+.imagenCampera3{
+    background-image: url(../img/campera11.png);
+}
+.imagenCampera3:hover{
+    background-image: url(../img/campera11-2.png);
+}
+
+
+
+.productos__producto p{
+    font-size: 1.9rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.productos__producto a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+    background-color: var(--ColorPrimarioNegro);
+    color: var(--colorBlanco);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.productos__producto a:hover{
+    background-color: var(--colorSecundarioRojo);
+}
+.productos__precio p{
+    color: var(--colorSecundarioRojo);
+    font-size: 1.9rem;
+}
+.productos__boton{
+    width: 50%;
+    margin: 2rem auto;
+}
+.precio{
+    color: var(--colorSecundarioRojo);
+}
+
+#llamada{
+    font-size: 3rem;
+
+}
+
+#llamada td{
+padding: 1rem;
+}
+
+.productos__precio .cuotas{
+    color: var(--colorVerde);
+    font-size: 1.8rem;
+}
+.filtrar{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.filtrar__item{
+    padding: 2rem;
+}
+.filtrar__item option{
+    font-size: 1.5rem;
+    
+}
+
+/* PAGINA COMPRA */
+
+.resumenCompra{
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem auto;
+}
+.Resumen a{
+    text-decoration: none;
+    color: var(--colorBlanco);
+    background-color: var(--colorSecundarioRojo);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    display: block;
+    margin: 3rem auto 0rem;
+}
+.resumenCompra a:hover{
+    background-color: var(--ColorPrimarioNegro);
+}
+
+
+.tablaCompra{
+    margin: auto auto;
+}
+.tablaCompra td, tr{
+    padding: 3rem 2rem;
+    font-size: 1.5rem;
+}
+
+.Resumen{
+    width: 35%;
+        height: 40%;
+    margin: 0 auto;
+    border: 1px solid var(--ColorPrimarioNegro);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+    transition: transform 0.5s;
+}
+.Resumen:hover{
+    transform: scale(1.05);
+}
+
+.Producto__Tabla{
+    display: flex;
+}
+.tabla__articulo{
+    padding: 1rem;
+}
+.titulo__Compra {
+    text-align: center
+}
+
+
+.ResumenTotal a {
+    background-color: var(--colorSecundarioRojo);
+    color: var(--colorBlanco);
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+.ResumenTotal a:hover{
+    background-color: var(--ColorPrimarioNegro);
+    cursor: pointer;
+}
+
+.cuotasSinInteres{
+    margin: 2rem auto;
+}
+
+.titulo{
+    background-color: var(--ColorPrimarioNegro);
+    color: var(--colorBlanco);
+    padding: 2rem;
+}
+
+.cardContactos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.sucursal{
+    margin: 2rem auto;
+}
+.sucursalDetalle{
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+.botonAgregarMasProductos a{
+    width: 30%;
+    text-align: center;
+    background-color: var(--ColorPrimarioNegro);
+    text-decoration: none;
+    color: var(--colorBlanco);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    display: block;
+    margin: 2rem auto;
+    font-size: 1.3rem;
+}
+.botonAgregarMasProductos a:hover{
+    background-color: var(--colorSecundarioRojo);
+}
+
+/* PAGINA FINALIZACION DE COMPRA*/
+
+.imagenGracias img{
+    display: block;
+    margin: 5rem auto ;
+    width: 10%;
+}
+.botonHome{
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--colorSecundarioRojo);
+    
+}
+
+

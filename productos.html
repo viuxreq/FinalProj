@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,900;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productos.css">
+    
+    <title>Desafio 4</title>
+</head>
+<body>
+    <header>
+        <div class="superior">
+
+            <!--CARRITO UTILIZANDO SUBMENU-->
+            <div class="subMenu">
+                <ul>
+                    <li> <div class="subMenu__contador">
+
+                    </div>
+                        <img class="imagen__carrito" src="img/carrito.png"  type="button" onclick=" verCarritoProductos()" alt="">
+                        <ul>
+                            <li>
+                                <div id="carrito">
+                                     <!--TABLA PARA EL CARRITO-->
+                                    <table id="lista-carrito2">
+                                        <thead>
+                                            <tr>
+                                                <td>ARTICULO</td>
+                                                <td>IMAGEN</td>
+                                                <td>DETALLE</td>
+                                                <td>TALLE</td>
+                                                <td>PRECIO</td>
+                                                <td>CANTIDAD</td>
+                                                <td >BOTON</td>
+                                            </tr>
+                                        </thead>
+                                        <Tbody>
+                                          <!--ACA SE CREARA EL CONTIDO DEL CARRITO DESDE JS -->
+                                        </Tbody>
+                                        
+                                        
+                                    </table>
+                                    <!--TOTAL DE LA COMPRA-->
+                                    <div class="contadorCarritoCompras">
+
+                                    <div class="totalProductos" > </div>
+                                    <div class="totalCompra1" > </div>
+
+                                </div>
+                                     <!--BOTON PARA PASAR A LA PAGINA DE COMPRA Y TERMINAR EL PROCESO DE COMPRA-->
+                                    <a class="continuarCompra" href="compra.html" onclick="sincronizarStorage(), ResumenCompra()">CONTINUAR CON LA COMPRA</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    </ul>
+            </div>
+            
+
+             <!--MENU-->
+        <nav>
+            <div class="navegacion">  
+               
+            <ul>
+                <li> <a href="index.html">INICIO</a> </li>
+                <li> <a href="productos.html"style="color: red;">PRODUCTOS</a> </li>
+                <li> <a href="contactos.html">CONTACTOS</a></li>
+            </ul>
+        </div>
+        </nav>
+    
+        <div class="redesSociales">
+            <!--ACA SE CREARAN LOS LOGOS DE LAS REDES SOCIALES DESDE JS-->
+        </div>
+    </div>
+  
+    </header>
+
+    
+    <main >
+        
+        <h1 id="tituloProductos">NUESTROS PRODUCTOS</h1>
+
+        <section>
+            <!--filtrar-->
+            <div class="filtrar">
+
+            <div class="filtrar__item">
+                <h3>FILTRAR : </h3>
+            </div>
+
+            <!--marca-->
+                <div class="filtrar__item">
+                    <label for="marca">MARCA</label>
+                    <select  id="marca1">
+                        <option value="">-Seleccionar-</option>
+                        <option value="Adidas">Adidas</option>
+                        <option value="Reebok">Reebok</option>
+                    </select>
+                </div>
+
+                <!--articulo-->
+                <div class="filtrar__item">
+                    <label for="articulo">ARTICULO</label>
+                    <select  id="articulo">
+                        <option value="">-Seleccionar-</option>
+                        <option value="Zapatilla">Zapatilla</option>
+                        <option value="Campera">Campera</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="productos">
+                <!--ACA VAN A IR LOS PRODUCTOS DEL ARRAY INVENTARIO-->
+                <div class="resultado"></div>
+            </div>
+        </section>
+      
+    </main>
+
+    <footer>
+        <div class="derechos">
+            <!--ACA SE CREARA EL FOOTER DESDE JS-->
+        </div>
+    </footer>
+   
+    
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!--CDN jQuery-->
+    <script src="jQuery.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

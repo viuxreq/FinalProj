@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,900;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productos.css">
+    
+    <title>Desafio 4</title>
+</head>
+<body>
+    <header>
+        <div class="superior">
+
+            <!--CARRITO UTILIZANDO SUBMENU NO TENGRA FUNCIONALIDAD SOLO SE UTILIZARA EL LOGO-->
+            <div class="subMenu">
+                <ul>
+                    <li> <div class="subMenu__contador">
+
+                    </div>
+                        <img class="imagen__Compra" src="img/logoCompra.png"   alt="">
+            </div>
+
+             <!--MENU-->
+        <nav>
+            <div class="navegacion">  
+               
+            <ul>
+                <li> <a href="index.html">INICIO</a> </li>
+                <li> <a href="productos.html">PRODUCTOS</a> </li>
+                <li> <a href="#">CONTACTOS</a></li>
+            </ul>
+        </div>
+        </nav>
+        
+
+        <div class="redesSociales">
+            <!--ACA SE CREARAN LOS LOGOS DE LAS REDES SOCIALES DESDE JS-->
+        </div>
+    </div>
+
+   
+        
+    </header>
+
+    <main >
+        <h2 class="titulo__Compra">Detalle de tu Compra</h2>
+
+        <div class="resumenCompra">
+
+            <!--RESUMEN DE LA COMPRA TABLA DONDE SE DETALLA LO QUE ESTA EN EL LOCALSTORAGE-->
+            <div class="tablaCompra">
+
+            <table id="tablaCompra2">
+                <thead>
+                    <tr>
+                        <td>PRODUCTO</td>
+                        <td>TALLE</td>
+                        <td>PRECIO UNITARIO</td>
+                        <td>CANTIDAD</td>
+                        <td>SUBTOTAL</td>
+                    </tr>
+                </thead>
+                <Tbody>
+                    
+                </Tbody>
+                
+                
+            </table>
+
+           <div class="botonAgregarMasProductos">
+            <a class="AgregarMasProductos" href="productos.html">AGREGAR MAS PRODUCTOS</a>
+           </div>
+        </div>
+
+        <!--RESUMEN DE LA COMPRA-->
+        <div class="Resumen">
+            <div class="contenido"><h2>Resumen de Compra</h2></div>
+            <div class="ResumenTotal">
+                <!--ACA VA EL RESUMEN GENERADO EN JS-->
+            </div>
+        </div>
+   
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="derechos">
+            <!--ACA SE CREARA EL FOOTER DESDE JS-->
+        </div>
+    </footer>
+   
+    
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!--CDN jQuery-->
+    <script src="jQuery.js"></script>
+    <script src="script2.js"></script>
+
+</body>
+</html>
