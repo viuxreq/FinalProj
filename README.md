@@ -20,6 +20,7 @@ https://viuxreq.github.io/FinalProj/index.html
 -  JavaScript vanilla
 -  Jquery - Bootstrap 
 -  DOM - Events - Shopping - SPA - Ajax - LocalStore and Fetch.
+-  API Rest
 
 <br>
 
