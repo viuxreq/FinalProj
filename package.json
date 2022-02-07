@@ -1,0 +1,19 @@
+{
+  "name": "coder-cacreq",
+  "version": "1.0.0",
+  "description": "Proyecto final para CoderHouse implementando todo lo usado en clase.",
+  "main": "ajax.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viuxreq/FinalPro.git"
+  },
+  "author": "Cáceres Requena, José Luis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viuxreq/FinalPro/issues"
+  },
+  "homepage": "https://github.com/viuxreq/FinalPro#readme"
+}
